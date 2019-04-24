@@ -1,0 +1,24 @@
+To take a directory and put it into a folder on your PC:
+ - Use "cd" command to reach destination folder (later commands only work within a git directory).
+ - type "git clone <insertURLhere>".
+
+you now have a local version of the project to work on!
+ - Use "git status" to see which files need to be added in preparation for the next commit.
+ - "git add <filename>" adds the file to the queue of stuff to be committed.
+ - "git commit" commits queued files to the local directory.
+ - "git commit -m 'inserttexthere'" commits with a message (used to explain changes in this commit).
+ - "git commit -A" commits all modified files.
+ - "git push" sends committed changes from local directory to the online directory from which we cloned.
+ - "git pull" imports new commits from the online repository to the local one.
+
+Branching, merging, pulling:
+ - "git branch" displays the current branches in the repository.
+ - "git branch <newbranchname>" creates a new branch (copy of current branch with new name).
+ - "git checkout <branchname>" switches to a specified branch.
+ - "git merge <branchname>" merges a specified branch with the current branch
+
+Things to remember:
+ - always do a git pull at the start of the day if working with others (so new changes can be present)
+ - should also pull every few hours to stay in sync with everyone else
+ - if you need to see other commands available, just type "git"
+ - "<ESC>;wq" is the command to submit the multiline message when a message is not added using -m.
